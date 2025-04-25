@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: the-map
+data:
+  deploy: |-
+    {
+      "defaultDeploymentMode": "RawDeployment"
+    }
+  ingress: |-
+    {
+      "enableGatewayApi": true,
+      "kserveIngressGateway": "<gateway-namespace>/<gateway-name>",
+    }
