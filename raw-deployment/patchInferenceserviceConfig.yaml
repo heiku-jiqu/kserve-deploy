@@ -10,5 +10,5 @@ data:
   ingress: |-
     {
       "enableGatewayApi": true,
-      "kserveIngressGateway": "<gateway-namespace>/<gateway-name>",
+      "kserveIngressGateway": "kserve/kserve-ingress-gateway",
     }
