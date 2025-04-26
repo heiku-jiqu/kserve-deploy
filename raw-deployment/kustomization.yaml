@@ -15,4 +15,4 @@ resources:
   # KServe Runtimes
   - https://github.com/kserve/kserve/releases/download/v0.15.0/kserve-cluster-resources.yaml
   # Patch 
-  - pathInferenceserviceConfig.yaml
+  - patchInferenceserviceConfig.yaml
