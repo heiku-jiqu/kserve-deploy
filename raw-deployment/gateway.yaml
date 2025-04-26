@@ -25,6 +25,6 @@ spec:
         namespaces:
           from: All
   infrastructure:
-  labels:
-    serving.kserve.io/gateway: kserve-ingress-gateway
+    labels:
+      serving.kserve.io/gateway: kserve-ingress-gateway
 
