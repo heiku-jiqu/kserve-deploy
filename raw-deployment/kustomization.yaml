@@ -14,5 +14,6 @@ resources:
   - https://github.com/kserve/kserve/releases/download/v0.15.0/kserve.yaml
   # KServe Runtimes
   - https://github.com/kserve/kserve/releases/download/v0.15.0/kserve-cluster-resources.yaml
-  # Patch 
-  - patchInferenceserviceConfig.yaml
+patches:
+  # Patch default deployment to RawDeployment and ingress to use gateway API
+  - path: patchInferenceserviceConfig.yaml
