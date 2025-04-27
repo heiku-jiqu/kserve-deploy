@@ -4,8 +4,10 @@ kind: Kustomization
 resources:
   # cert-manager
   - https://github.com/cert-manager/cert-manager/releases/download/v1.17.2/cert-manager.yaml
-  # Gateway API
-  - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.1/standard-install.yaml
+  # Envoy Gateway
+  - https://github.com/envoyproxy/gateway/releases/download/v1.3.2/install.yaml
+  # Gateway API (no need to add cause Envoy helps you add)
+  # - https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.2.1/standard-install.yaml
   # GatewayClass
   - gatewayclass.yaml
   # Gateway
